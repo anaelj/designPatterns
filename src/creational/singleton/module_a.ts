@@ -1,6 +1,6 @@
-import { MyDatabaseModule } from './db/my-database-module';
+import { MyDatabaseFunction } from './db/my-database-function';
 
-export const myDatabase = MyDatabaseModule;
+export const myDatabase = MyDatabaseFunction;
 myDatabase.add({ name: 'Luis', age: 30 });
 myDatabase.add({ name: 'Maria', age: 50 });
 myDatabase.add({ name: 'Eduardo', age: 10 });
