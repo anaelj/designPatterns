@@ -1,4 +1,3 @@
-import { DeviceImplementation } from './../device/device-implementation';
 import { RemoteControl } from './remote-control';
 export class RemoteControlWithVolume extends RemoteControl {
   volumeUp(): void {
