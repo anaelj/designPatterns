@@ -1,0 +1,20 @@
+import { DefaultDiscountStrategy } from './sopping-cart/default-discount-stategy';
+import { ECommerceShoppingCart } from './sopping-cart/ecommerce-shopping-cart';
+import { NewDiscountStrategy } from './sopping-cart/new-discount';
+
+const shoppingCart = new ECommerceShoppingCart();
+shoppingCart.addProduct({ name: 'Produto 1', price: 50 });
+shoppingCart.addProduct({ name: 'Produto 2', price: 50 });
+shoppingCart.addProduct({ name: 'Produto 3', price: 50 });
+shoppingCart.addProduct({ name: 'Produto 4', price: 50 });
+console.log(shoppingCart.getTotal());
+console.log(shoppingCart.getTotalWithDiscount());
+console.log('#########');
+shoppingCart.discount = new DefaultDiscountStrategy();
+console.log(shoppingCart.getTotal());
+console.log(shoppingCart.getTotalWithDiscount());
+console.log('#########');
+shoppingCart.discount = new NewDiscountStrategy();
+console.log(shoppingCart.getTotal());
+console.log(shoppingCart.getTotalWithDiscount());
+console.log('#########');
