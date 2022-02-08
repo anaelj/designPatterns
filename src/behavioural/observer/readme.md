@@ -1,0 +1,1 @@
+ yarn tsc .\src\behavioural\observer\observer.ts -w
