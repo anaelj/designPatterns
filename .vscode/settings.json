@@ -1,0 +1,12 @@
+{
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "typescript": "cls && yarn ts-node --files --transpile-only"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2
+}
